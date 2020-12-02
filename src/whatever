@@ -1,0 +1,9 @@
+idade: Yup.string().required("Campo obrigatório").min(16, "Idade mínima: 16 anos"),
+    cpf: Yup.string().required("Campo obrigatório"),
+    matricula: Yup.string().required("Campo obrigatório").min(9, "Formato inválido").max(9, "Formato inválido"),
+    endereco: Yup.string().required("Campo obrigatório"),
+    numero: Yup.string().notRequired,
+    complemento: Yup.string().notRequired,
+    bairro: Yup.string().required("Campo obrigatório"),
+    estado: Yup.string().required("Campo obrigatório"),
+    cep: Yup.string().required("Campo obrigatório").min(8, "Formato inválido").max(8, "Formato inválido")
